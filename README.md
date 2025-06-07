@@ -1,2 +1,3 @@
-20253328	Lim Seoyoon
+20253328 Lim Seoyoon
+
 Kookmin Univ. SW
