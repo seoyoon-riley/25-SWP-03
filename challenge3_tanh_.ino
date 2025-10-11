@@ -59,17 +59,13 @@ void loop() {
   }
 }
 
-// ----------------------
 // tanh 기반 제어 함수
-// ----------------------
 float smoothTanh(float x) {
   // tanh의 범위는 -1~+1 → 0~1로 스케일 변환
   return 0.5 * (tanh(x) + 1.0);
 }
 
-// ----------------------
 // 초음파 거리 측정 함수
-// ----------------------
 float getDistance() {
   digitalWrite(PIN_TRIG, LOW);
   delayMicroseconds(2);
@@ -81,3 +77,4 @@ float getDistance() {
   float distance = duration * 0.0343 / 2.0; // cm 단위 변환
   return distance;
 }
+
