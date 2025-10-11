@@ -61,16 +61,12 @@ void loop() {
   }
 }
 
-// ----------------------
 // Sigmoid 함수 정의
-// ----------------------
 float sigmoid(float x) {
   return 1.0 / (1.0 + exp(-x));
 }
 
-// ----------------------
 // 초음파 거리 측정 함수
-// ----------------------
 float getDistance() {
   digitalWrite(PIN_TRIG, LOW);
   delayMicroseconds(2);
@@ -82,3 +78,4 @@ float getDistance() {
   float distance = duration * 0.0343 / 2.0;  // cm 단위 변환
   return distance;
 }
+
