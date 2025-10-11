@@ -13,7 +13,7 @@ int startAngle = 0;
 int stopAngle  = 90;
 int currentAngle = startAngle;
 bool isCarDetected = false;
-#define DIST_THRESHOLD 20.0  // cm
+#define DIST_THRESHOLD 20.0  
 
 // 함수 선언
 float getDistance();
@@ -77,4 +77,5 @@ float getDistance() {
   float distance = duration * 0.0343 / 2.0; // cm 단위 변환
   return distance;
 }
+
 
